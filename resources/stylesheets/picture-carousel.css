@@ -1,0 +1,114 @@
+
+/* 
+---------------------- 
+!!! Picture Carousel
+---------------------- 
+*/
+
+#picture-carousel {
+  position : relative;
+  height   : 250px;
+}
+
+
+/* 
+ -- Controls - Next and Prev buttons 
+*/
+
+#picture-carousel .pc-controls {
+	position : absolute;
+	top      : 80px;
+  width    : 56px;
+  height   : 55px;
+
+  z-index  : 2;
+  border   : none;
+  cursor   : pointer;
+  opacity  : 0.25;
+
+
+  -webkit-transition : opacity .15s .1s;
+  -moz-transition    : opacity .15s .1s;
+  -o-transition      : opacity .15s .1s;
+  transition         : opacity .15s .1s;
+}
+
+#picture-carousel .pc-controls:hover {
+  opacity: 0.75;
+
+  -webkit-transition-delay : 0;
+  -moz--transition-delay   : 0;
+  -o-transition-delay      : 0;
+  transition-delay         : 0;
+}
+
+/* #PSDfile - left and right -  Different distance might be intentionally added */
+/* #Optimization - Ony one image might be used for controls arrows, but depends on browser support(CSS transform: rotate() ) */
+#picture-carousel .next {
+  left : 11px;
+  background : url(../images/picture-carousel/prev.png);
+}
+
+#picture-carousel .prev {
+  right : 11px;
+  background: url(../images/picture-carousel/next.png);   
+}
+
+
+
+
+
+/* 
+--- Items
+*/
+
+#pc-body .owl-item,
+#pc-body img {
+  width  : 320px!important;
+  height : 250px; 
+}
+
+
+#picture-carousel .item {
+  position : relative;
+}
+
+#picture-carousel .item-text {
+  position   : absolute;
+  width      : 290px;
+  background : #f1f1e8; 
+
+  bottom     : 0;
+  left       : 15px;
+  padding    : 20px 10px;
+  box-sizing : border-box;
+}
+
+/* Heading */
+#picture-carousel h2 {
+  font-size      : 26px; 
+  line-height    : 28.4px;
+  letter-spacing : -1.56px;  
+}
+
+/* Subheading */
+#picture-carousel h3 {
+  line-height    : 20.4px;
+  letter-spacing : -0.84px;   
+}
+
+
+
+/* 
+might use these overflow tehniques
+http://stackoverflow.com/questions/6222616/with-css-use-for-overflowed-block-of-multi-lines
+*/
+#picture-carousel p {
+  letter-spacing : .2px;  
+  line-height    : 20px;
+}
+
+
+#picture-carousel br {
+  line-height : 24px; 
+}

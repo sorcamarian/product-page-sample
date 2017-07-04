@@ -1,0 +1,372 @@
+/* 
+ Afects : header, footer and general page settings(width,color,font) ;
+*/
+
+/*  
+- General 
+*/
+
+html {
+    background : #acacac;
+}
+
+body {
+    width       : 944px;
+    background  : #fff;
+    color       : #5b514c;
+    font-size   : 16px;
+    line-height : normal;
+    font-family : "SourceSansPro-Regular";
+    font-weight : normal!important; /* make fonts look "normal"/original on firefox */
+
+    margin      : 0 auto;
+    padding     : 0 42px;
+    box-sizing  : border-box;
+}
+
+
+h1, h2, h3 {
+    text-transform : uppercase;
+    color          : #162631;
+    font-family    : "SourceSansPro-Bold";
+    font-weight    : normal;
+}
+
+h1 {
+    font-size      : 26px;
+}
+
+h3 {
+    font-size      : 14px;  
+}
+
+
+p {
+  font-size : 14px;
+  color     : #162631; 
+}
+
+
+a {
+  color           : #162631;
+  text-decoration : none;
+  font-weight     : normal;
+}
+
+a:hover,
+#footer a:hover {
+  color : #bc0000;
+}
+
+
+b {
+    font-family     : "SourceSansPro-Bold"; 
+    font-weight     : normal;
+}
+
+
+/* 
+ Helper classes - good for dynamic content
+*/
+
+a.active {
+  color          : #bc0000;
+  text-transform : uppercase;
+  font-family    : "SourceSansPro-Bold";   
+}
+
+
+.light,
+a.light {
+  font-family : "SourceSansPro-Light"; 
+}
+
+.black,
+a.black {
+  font-family : "SourceSansPro-Black"; 
+}
+
+
+.uppercase {
+  text-transform : uppercase;
+}
+
+.no-uppercase {
+  text-transform : none;
+}
+
+
+.vertical-line::after {
+  content : "|";
+}
+
+
+.clear {
+  clear : both;
+}
+
+
+
+/* 
+- Header  
+*/
+
+#header {
+  padding-top : 46px;
+}
+
+
+
+/*
+-- Logo and Navigation
+*/
+
+
+
+/* 
+--- Logo
+*/
+
+#logo {
+  float : left;
+}
+
+
+
+/* 
+--- Top(right) menu
+*/
+
+#top-menu {
+  float   : right;
+  padding : 35px 91px 0 0;
+}
+
+#top-menu li {
+  float   : left;
+}
+
+#top-menu a {
+  font-size   : 14px;
+  line-height : 22px;
+  font-family : "SourceSansPro-SemiBold";
+
+  letter-spacing : 0.45px;
+  font-kerning   : normal;
+
+  padding : 0 2px;
+  margin  : 0px 3.5px;
+}
+
+
+
+
+/*
+ -- Green bar - Search and user controls
+*/
+
+#search-and-user-controls {
+  background : #8bc63f;
+  height     : 37px;
+  margin     : 10px -42px 0;
+  padding    : 0 42px;
+ 
+  color       : #162631;
+  font-size   : 14px;
+  line-height : 41px;
+  /* clear      : both; */
+}
+
+
+
+/*
+ --- Search
+*/
+
+#search {
+  float : left;
+}
+
+#search span {
+  letter-spacing : 0.28px;
+}
+
+#search input {
+  font-size    : 14px;
+  line-height  : 27px;
+  font-family  : "SourceSansPro-Regular";
+  background   : #f1f1e8;
+
+  width    : 212px;
+  padding  : 0 0 0 5px;
+  margin   : 0 0 0 20px;
+
+  outline        : none;
+  border         : none;
+  vertical-align : 2px;
+}
+
+
+
+/*
+ --- User controls
+*/
+
+#user-controls {
+  float   : right;
+  display : inline;
+
+  margin-right : 83px;
+}
+
+#user-controls li {
+  display     : inline-block;
+  line-height : normal; 
+}
+
+
+
+
+/*  
+ --- Header top text
+*/
+
+
+#header-top-text {
+  font-size      : 16px;
+  line-height    : 20px; 
+  background     : #f1f1e8;
+
+
+  /* text might be centered, instead of 90px left, like on PSD file */
+  padding        : 7px 0 15px 130px;
+  margin         : 0 -42px;
+  letter-spacing : 0.28px;
+}
+
+#header-top-text .vertical-align::after {
+  letter-spacing : 0.28px;
+}
+
+#header-top-text h1 {
+  font-family    : "SourceSansPro-Regular";
+  display        : inline;
+  font-size      : 16px;
+  line-height    : 20px;
+}
+
+
+
+
+/* 
+- Footer
+*/
+
+/* General */
+
+#footer {
+  color          : #f1f1e8;
+  font-size      : 14px;
+  background     : #8bc63f;
+  line-height    : 20px;
+  letter-spacing : .28px;
+
+  margin     : 40px -42px 0;
+  padding    : 14px 42px 55px;
+  box-sizing : border-box;
+}
+
+#footer a {
+  color   : #f1f1e8;
+}
+
+
+
+/* 
+ -- Footer left size - links 
+*/  
+
+#footer-links,
+#footer-links > ul {
+  float : left;
+}
+
+
+/* First list */
+
+#footer-links b {
+  font-size      : 18px;
+  letter-spacing : -0.3px;
+}
+
+
+/* Seccond list */
+#footer-links > ul:nth-child(2) {
+  margin : 20px 0 0 30px;
+}
+
+
+
+/* 
+-- Footer right side - Footer icons 
+*/
+
+#footer-icons {
+  float   : right;
+  margin  : 20px 20px 0 0;
+}
+
+#footer-icons li {
+  display : inline-block;
+  float   : left;
+  /* margin-left : 18px; -> in case all margins should be equal, not like in the PSD file */
+}
+
+#footer-icons li:nth-child(2),
+#footer-icons li:nth-child(4) {
+  margin-left : 18px;
+}
+
+#footer-icons li:nth-child(3) {
+  margin-left : 19px;
+}
+
+#footer-icons li:nth-child(5) {
+  margin-left : 21px;
+}
+
+
+#footer-icons a {
+  width    : 30px;
+  height   : 30px;
+  display  : inline-block;
+ 
+  background-repeat   : no-repeat;
+  background-position : center;
+  background-size     : contain;
+}
+
+#footer-icons a:hover { 
+  opacity : .8; 
+}
+
+
+#footer-icons li:nth-child(1) a {
+  background-image : url(../../resources/images/footer-icons/facebook.png);
+}
+
+#footer-icons li:nth-child(2) a {
+  background-image : url(../../resources/images/footer-icons/google.png);
+}
+
+#footer-icons li:nth-child(3) a {
+  background-image : url(../../resources/images/footer-icons/twitter.png);
+}
+
+#footer-icons li:nth-child(4) a {
+  background-image : url(../../resources/images/footer-icons/rss.png);
+}
+
+#footer-icons li:nth-child(5) a {
+  background-image : url(../../resources/images/footer-icons/email.png);
+}

@@ -1,0 +1,412 @@
+/*
+
+about : {
+
+    type : "text/css",
+
+    modules : {
+        about : "code parts can be used on other pages",
+        show  : ["top nav", "footer", "middle icon carousel"];
+    },
+
+    for : {
+        domain : "retechnology.com",
+        page   : "product page"
+    },
+
+    version : {
+        internal : 0.2,
+        external : null;
+    },
+
+    reminder : {
+        0 : {
+            0 : "split css intro modules, for example: general(top nav, middle carousel), product page";
+        },
+
+        1 : {
+            0 : "rem or px";
+        },
+
+        2 : {
+            0 : "rel=home, semantics additions ..etc"  
+        },
+
+        3 : {
+            0 : "optimize(group) some rules";
+        },
+
+        4 : {
+            0 : "verify HTML on W3C"; 
+        },
+
+        5 : {
+            0 : "ask if footer and nav links should turn red on hover"
+            1 : "ask if footer text 'REACH 200K READERS PER MONTH 
+' should be hyperlink alonside:'ADVERTISE WITH RETECHNOLOGY' ";
+        } 
+
+        6 : {
+            0 : "font kerning is not fully available in CSS and letter spacing is not exactly like in PSD file, but is close";
+        },
+
+        7 : {
+            0 : "understand functionality of Product details page section - seccond carousel";
+        };
+
+        8 : {
+            0 : "Image carousel - img or background-image + inline style or <link> css";
+        };
+
+        9 : {
+            0 : "Adapt general.css helpers(.upper,.active) depending on other pages needs";
+        };
+    }
+
+};
+
+*/
+
+
+
+
+/* 
+------------------------
+!!! Product Page
+------------------------
+*/
+
+/*
+At this point, @import is used to make the code more readable and easy to adjust. 
+For the online page, these files could be grouped to avoit multiple  HTTP requests.
+*/
+
+/*  Reset - source : https://github.com/jasonkarns/css-reset  */
+
+    @import "reset.css";
+
+/* Fonts - SourceSansPro All */
+
+    @import "fonts.css";
+
+/* Site General CSS(header, footer, colors ...etc) */
+
+    @import "general.css";
+
+
+
+
+/* 
+- Header 
+*/
+
+
+
+/* 
+--- Picture and Icon Carousels 
+*/
+
+/* General CSS for OwlCarousel V2.0.0-beta.2.4 */
+@import "owl.carousel.css";
+
+
+@import "picture-and-icon-carousels.css";
+/*    
+Contains:  
+  - picture-carousel.css;
+  - icon-carousel.css ;
+*/
+
+
+
+/* 
+--- "Product details page" 
+*/
+#about-page {
+  font-size      : 18px;
+  line-height    : 22.24px;
+  letter-spacing : 0.3px;
+
+  padding-top : 12px;
+}
+
+
+.gray-wrapper {
+  background : #f1f1e8;
+  margin     : 0 -42px;
+  padding    : 0 42px;
+}
+
+
+
+/* 
+- Middle content 
+*/      
+
+#middle-content {
+  padding : 38px 20px 0;
+}
+
+
+#middle-content .left {
+  width  : 400px;
+  float  : left;  
+}
+
+#middle-content .right {
+  width : 400px;
+  float : right;
+}
+
+#middle-content > .clear {
+  margin-bottom : 40px; 
+}
+
+
+
+
+/*
+-- Main
+*/
+
+
+/* 
+--- Product (article#product)
+*/
+
+
+/*
+---- Product header 
+*/
+
+#product-header a {
+  line-height : 22px; 
+}
+
+#product-header h1 {
+  font-family : "SourceSansPro-Black";
+  line-height : 100%; 
+  color       : #5b514c;   
+}
+
+
+#product-location {
+  margin-top : 16px;
+}
+
+#product-location,
+#product-options {
+  font-family    : "SourceSansPro-Semibold";   
+}
+
+
+
+/*
+---- Product description/body
+*/
+
+#product-description {
+  margin : 40px 0 20px;
+}
+
+#product-description p {
+  font-size   : 16px;
+  line-height : 20px;    
+  color       : #5b514c;
+}
+
+#product-description b {
+  font-family : "SourceSansPro-Semibold"; 
+}
+
+
+
+
+/*
+-- Related articles
+*/
+
+#related-articles {
+  float      : right;
+  margin     : 44px 0 0 0;
+}
+
+
+
+/* 
+--- Options - Related articles
+*/
+
+/* General - Type and Controls*/
+#ra-options a {
+  font-size      : 16px;  
+  line-height    : 22px;
+
+  font-family    : "SourceSansPro-Semibold";
+}
+
+
+/* Type - Related articles */
+#ra-type a {
+  font-size   : 14px;      
+}
+
+
+
+/* Controls - Related articles */
+#ra-controls a {
+  font-family : "SourceSansPro-Bold";    
+}
+
+
+
+/* 
+--- The articles - Related articles
+*/
+
+#related-articles article {
+  position   : relative;
+  margin-top : 35px; 
+
+  line-height : 0;
+}
+
+#related-articles article:nth-of-type(2) {
+  margin-top : 40px;     
+}
+
+#related-articles article:nth-of-type(3) {
+  margin-top : 45px;     
+}
+
+
+ 
+/* 
+---- Text zone
+*/
+/*
+might use these overflow tehniques
+http://stackoverflow.com/questions/6222616/with-css-use-for-overflowed-block-of-multi-lines
+*/ 
+#related-articles .text {
+  width      : 360px;
+  padding    : 15px 10px 10px;
+  box-sizing : border-box;
+
+  background : #f1f1e8;
+
+  position : absolute;
+  bottom   : 0;
+  left     : 20px;
+}
+
+
+
+/* 
+  Heading 
+*/
+#related-articles .text h2 a {
+  font           : 18px/20px "SourceSansPro-Black";
+  color          : #231e21;
+  letter-spacing : -0.36px; 
+  text-transform : none; 
+}
+
+#related-articles .text h2 a:hover {
+  color : #bc0000;
+}
+
+
+
+/* 
+  Description 
+*/
+#related-articles p {
+  font-size   : 16px;
+  line-height : 20px;  
+  color       : #5b514c;
+}
+
+#related-articles .more {
+  font-size      : 14px; 
+  letter-spacing : 0.28px;
+}
+
+
+
+
+/* 
+-- Offers
+*/
+
+/* 
+ General
+*/
+
+#offers > div {
+  padding : 10px 10px 35px;
+}
+
+#offers a,
+#offers p {
+  font-size      : 32px;
+  letter-spacing : -1.92px;  
+}
+
+#offers .gray {
+  background : #a5a599;
+}
+
+#offers .green {
+  background : #8bc63f;
+  margin-top : 40px;
+
+  padding-top    : 5px;
+  padding-bottom : 30px;
+}
+
+
+#offers br {
+  line-height: 28.4px;
+}
+
+
+
+/* Heading */
+
+#offers h3 a {
+  color       : #f1f1e8;
+  line-height : 30.4px; 
+}
+
+#offers h3 a:hover {
+  color : #bc0000; 
+}
+
+
+
+/* 
+ Description
+*/
+
+#offers p {
+  color       : #231e21;
+  line-height : 34.4px; 
+}
+
+#offers .green > p {
+  padding-top : 5px;
+}
+
+
+/*
+-- Bottom add
+*/
+
+#bottom-add {
+  width  : 728px;
+  height : 90px;
+  
+  margin-left : 60px;
+  background  : gray;
+}

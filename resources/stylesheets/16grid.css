@@ -1,0 +1,32 @@
+body {
+  position : relative; 
+}
+
+#column-grid-16-image {
+	position : absolute;
+	width    : 944px;
+	height:  : auto;
+	left     : 0; 
+	z-index  : 3; 
+}
+
+#column-grid-16-image.off {
+	display : none; 
+}
+
+#column-grid-16 {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    text-align: center;
+    padding: 5px;
+    background: red;
+    color : white;
+    opacity: .7;
+    border-top-right-radius: 5px;	
+}
+
+#column-grid-16 header {
+	cursor: pointer;
+}

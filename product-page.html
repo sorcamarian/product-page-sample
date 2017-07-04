@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>Product page - Retechnology</title>
+        <link rel="stylesheet" type="text/css" href="resources/stylesheets/product-page.css">
+        <link rel='shortcut icon' type='image/x-icon' href='resources/images/favicon.ico' />
+
+    </head>
+
+    <body>
+        <img data-role="For tests" src="resources/images/16-grid.png" id="column-grid-16-image" class="off">
+
+		<header id="header">
+		    <nav id="logo-and-menu" class="uppercase" role="navigation">
+                <a id="logo" href="" rel="home">
+                    <img width="251" height="60" src="resources/images/logo.png" alt="Retechnology logo" title="Homepage">
+                </a>
+
+			    <ul id="top-menu">   
+				    <li><a href="/articles">Articles</a></li>
+				    <li><a href="/products">Products</a></li>
+					<li><a href="/companies">Companies</a></li>
+					<li><a href="/news">News</a></li>
+					<li><a href="/webinars">Webinars</a></li>
+					<li><a href="/#more">More</a></li>
+			    </ul>
+
+                <div class="clear"></div>
+		    </nav>
+            <!--  End of #logo-and-menu  --> 
+
+
+            <div id="search-and-user-controls">
+                 
+                <div id="search" role="search">
+                    <span class="uppercase">I am looking for: </span>
+                    <input type="search" name="search" />
+                </div>
+
+                <ul id="user-controls">
+                    <li>Welcome <span id="username">Marilyn</span>!</li>
+                    <li> 
+                        <span class="vertical-line"></span> 
+                        <a href="#log-out" id="log-out" class="uppercase">Log out</a>
+                        <span class="vertical-line"></span> 
+                    </li>
+                    <li> <a href="#profile" id="my-profile">Profile</a> </li>
+                </ul>
+                <!-- End of #user-controls -->
+                
+            </div>
+            <!-- End of #search-and-user-controls -->
+
+
+            <div class="gray-wrapper">
+  
+                <div id="header-top-text" class="uppercase">
+                	<h1>Retechnology <b>premium marketplace related products</b></h1>
+
+                    <span class="vertical-line"></span>
+                	<a href="">Webinars</a>
+                    <span class="vertical-line"></span>   
+                	<a href="">Special offers</a>
+                </div>
+                <!-- End of #header-text -->
+
+
+                <div id="picture-carousel">
+                    <!--  
+                       - OwlCarousel V2.0.0-beta.2.4 is used, V1 doesn't have autoWidth(by default) 
+                       - http://www.owlcarousel.owlgraphic.com/
+                       - Might use Lazy Load option -> http://www.owlcarousel.owlgraphic.com/demos/lazyLoad.html 
+                    -->                    
+                    <button class="pc-controls next"></button>
+                    <div id="pc-body">    
+
+                        <div class="item">
+                            <img src="resources/images/picture-carousel/dark-red.png" alt="">
+                            <div class="item-text">
+                                <h2>Webinars <a href="#watch-now" class="active light">Watch now</a></h2> 
+                                <h3>Software review</h3>
+                                <br>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="resources/images/picture-carousel/light-green.png" alt="">
+                            <div class="item-text">
+                                <h2><a href="">Plan wise</a></h2>
+                                <h3 class="black">Premium accounting product</h3>
+                                <p>Lorem ipsum dolor sit amet, no nec inermis 
+                                   apeirian definitionem, cu oratio intellega apeirian definitionem, cu oratio intellega... 
+                               </p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="resources/images/picture-carousel/orange.png" alt="">
+                        </div>
+
+                        <div class="item">
+                            <img src="resources/images/picture-carousel/blue.JPG" alt="">
+                        </div>
+
+                        <div class="item">
+                            <img src="resources/images/picture-carousel/red.JPG" alt="">
+                        </div>
+
+                    </div>
+                    <!-- End of #owl-carousel -->
+                    <button class="pc-controls prev"></button>
+                   
+                </div>
+                <!-- End of #picture-carousel -->
+                
+
+                <h2 id="about-page">Product detail page</h2>
+
+
+                <nav id="icon-carousel" class="uppercase">
+                    <!--  
+                       - OwlCarousel V2.0.0-beta.2.4 is used, V1 doesn't have autoWidth(by default) 
+                       - http://www.owlcarousel.owlgraphic.com/
+                       - Might use Lazy Load option -> http://www.owlcarousel.owlgraphic.com/demos/lazyLoad.html  
+                       - Might make the controll buttons stay static, and only the icons to move.(requires updated structure)
+                    -->  
+                    <aside id="ic-options">
+                        <div id="ic-filters">
+                            <span>Filters: </span>
+
+                            <button type="button" name="agent">Agent</button>
+                            <span class="vertical-line"></span>             
+                            <button type="button" name="broker">Broker</button>
+                            <span class="vertical-line"></span>
+                            <button type="button" name="mls">MLS</button>   
+                        </div>
+
+                        <div id="ic-sort">
+                            <span>Sort: </span>
+                            <button data-value="0" class="toggle-list" type="button">Alphabetical</button>
+
+                            <ul class="list inactive" data-type="sort">
+                                <li data-value="1">Option X</li>
+                                <li data-value="2">Option Y</li>
+                                <li data-value="3">Option Z</li>
+                            </ul>
+                        </div>
+
+                        <div id="ic-display">
+                            <span>Display: </span>
+
+                            <button type="button" name="25">25</button>
+                            <span class="vertical-line"></span>             
+                            <button type="button" name="50">50</button>
+                            <span class="vertical-line"></span>
+                            <button type="button" name="100">100</button>   
+                        </div>
+
+                        <div id="ic-show">
+                            <span>Show: </span>
+                            <button data-value="0" class="toggle-list" type="button">All categories</button>
+
+                            <ul class="list inactive" data-type="show">
+                                <li data-value="1">Categorie A</li>
+                                <li data-value="2">Categorie XYZ</li>
+                                <li data-value="3">Categorie Beta</li>
+                            </ul>                            
+                        </div>
+
+                    </aside>
+                    <!-- End of #ic-options -->
+                    <div class="clear"></div> 
+
+
+                    <div id="ic-icons">
+                        <!-- 
+                        Might use bellow notes for client side Javascript sorting options.
+                        var clientSideSortingNotes = {
+                            FILTER : {
+                               dataTypeAttribute : ["agent", "broker", "MLS"]
+                            }
+                            ,
+                            SORT : {
+                              dataNameAttribute : "Icon title"
+                            }
+                            ,
+                            DISPLAY : {
+                              getFirstNelements : function() {
+                                $("#ic-icons li:lt(5)");
+                              }                            
+                            }
+                            ,
+                            SHOW : {
+                               dataCategorieAttribute : ["All categories", "Categorie X", "Categorie Y"]
+                            }
+                            ,
+                            whileFilter : "Disable user interaction with icons.(Overlay layer?)"
+                        }
+                          
+                        -->
+
+                        <ul class="row item">
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/1031_exchange_services.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/1031_exchange_services.png" alt="">
+                                    </div>
+                                    <div class="title">1031 Exchange Services</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/accounting.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/accounting.png" alt="">
+                                    </div>
+                                    <div class="title">Accounting</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/advertising.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/advertising.png" alt="">
+                                    </div>
+                                    <div class="title">Advertising</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/agent_rating.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/agent_rating.png" alt="">
+                                    </div>
+                                    <div class="title">Agent Rating</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/appraisal.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/appraisal.png" alt="">
+                                    </div>
+                                    <div class="title">Appraisal</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/back_office.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/back_office.png" alt="">
+                                    </div>
+                                    <div class="title">Back Office</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/blogs.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/blogs.png" alt="">
+                                    </div>
+                                    <div class="title">Blogs</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/business_planning.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/business_planning.png" alt="">
+                                    </div>
+                                    <div class="title">Business Planning</div>
+                                </a>
+                            </li>
+                            <li class="more"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/more.png" alt=""><img class="red" src="resources/images/icon-carousel/red/more.png" alt=""></span><span class="title">More</span></button>
+                            </li>
+                        </ul>
+                        <!-- End of .row -->
+
+                        <ul class="row item">
+                            <li class="previous"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/previous.png" alt=""><img class="red" src="resources/images/icon-carousel/red/previous.png" alt=""></span><span class="title">Previous</span></button>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/call_concierge.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/call_concierge.png" alt="">
+                                    </div>
+                                    <div class="title">Call concierge</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/camera_hardware.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/camera_hardware.png" alt="">
+                                    </div>
+                                    <div class="title">Camera Hardware</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/click_to_call.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/click_to_call.png" alt="">
+                                    </div>
+                                    <div class="title">Click to call</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/closing_management.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/closing_management.png" alt="">
+                                    </div>
+                                    <div class="title">Closing management</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/closing_settlement_services.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/closing_settlement_services.png" alt="">
+                                    </div>
+                                    <div class="title">Closing settlement services</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/crm.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/crm.png" alt="">
+                                    </div>
+                                    <div class="title">CRM</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/data_backup.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/data_backup.png" alt="">
+                                    </div>
+                                    <div class="title">Data backup</div>
+                                </a>
+                            </li>
+                            <li class="more"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/more.png" alt=""><img class="red" src="resources/images/icon-carousel/red/more.png" alt=""></span><span class="title">More</span></button>
+                            </li>
+                        </ul>
+                        <!-- End of .row -->
+
+                        <ul class="row item">
+                            <li class="previous"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/previous.png" alt=""><img class="red" src="resources/images/icon-carousel/red/previous.png" alt=""></span><span class="title">Previous</span></button>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/data_licensing.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/data_licensing.png" alt="">
+                                    </div>
+                                    <div class="title">Data licensing</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/data_quality_compliance.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/data_quality_compliance.png" alt="">
+                                    </div>
+                                    <div class="title">Data quality compliance</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/data_sharing.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/data_sharing.png" alt="">
+                                    </div>
+                                    <div class="title">Click to call</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/default_services.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/default_services.png" alt="">
+                                    </div>
+                                    <div class="title">Default services</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/development.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/development.png" alt="">
+                                    </div>
+                                    <div class="title">Development</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/digital_signature.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/digital_signature.png" alt="">
+                                    </div>
+                                    <div class="title">Digital signature</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/document_management.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/document_management.png" alt="">
+                                    </div>
+                                    <div class="title">Document management</div>
+                                </a>
+                            </li>
+                            <li class="more"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/more.png" alt=""><img class="red" src="resources/images/icon-carousel/red/more.png" alt=""></span><span class="title">More</span></button>
+                            </li>
+                        </ul>
+                        <!-- End of .row -->
+
+                        <ul class="row item">
+                            <li class="previous"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/previous.png" alt=""><img class="red" src="resources/images/icon-carousel/red/previous.png" alt=""></span><span class="title">Previous</span></button>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/drip_marketing.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/drip_marketing.png" alt="">
+                                    </div>
+                                    <div class="title">Drip marketing</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/ecommerce_platform.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/ecommerce_platform.png" alt="">
+                                    </div>
+                                    <div class="title">Ecommerce platform</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/education.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/education.png" alt="">
+                                    </div>
+                                    <div class="title">Click to call</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/expense_tracking.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/expense_tracking.png" alt="">
+                                    </div>
+                                    <div class="title">Expense tracking</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/facebook.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/facebook.png" alt="">
+                                    </div>
+                                    <div class="title">Facebook</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/fax_online.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/fax_online.png" alt="">
+                                    </div>
+                                    <div class="title">Fax online</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/floor_plan.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/floor_plan.png" alt="">
+                                    </div>
+                                    <div class="title">Floor plan</div>
+                                </a>
+                            </li>
+                            <li class="more"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/more.png" alt=""><img class="red" src="resources/images/icon-carousel/red/more.png" alt=""></span><span class="title">More</span></button>
+                            </li>
+                        </ul>
+                        <!-- End of .row -->
+
+                        <ul class="row item">
+                            <li class="previous"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/previous.png" alt=""><img class="red" src="resources/images/icon-carousel/red/previous.png" alt=""></span><span class="title">Previous</span></button>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/floor_skeduling.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/floor_skeduling.png" alt="">
+                                    </div>
+                                    <div class="title">Floor skeduling</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/foreclosure.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/foreclosure.png" alt="">
+                                    </div>
+                                    <div class="title">Foreclosure</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/global_marketing.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/global_marketing.png" alt="">
+                                    </div>
+                                    <div class="title">Global marketing</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/graphics.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/graphics.png" alt="">
+                                    </div>
+                                    <div class="title">Graphics</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/green.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/green.png" alt="">
+                                    </div>
+                                    <div class="title">Green</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/hosting.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/hosting.png" alt="">
+                                    </div>
+                                    <div class="title">Hosting</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/idx.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/idx.png" alt="">
+                                    </div>
+                                    <div class="title">IDX</div>
+                                </a>
+                            </li>
+                            <li class="more"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/more.png" alt=""><img class="red" src="resources/images/icon-carousel/red/more.png" alt=""></span><span class="title">More</span></button>
+                            </li>
+                        </ul>
+                        <!-- End of .row -->
+
+                        <ul class="row item">
+                            <li class="previous"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/previous.png" alt=""><img class="red" src="resources/images/icon-carousel/red/previous.png" alt=""></span><span class="title">Previous</span></button>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/inspection.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/inspection.png" alt="">
+                                    </div>
+                                    <div class="title">Inspection</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/investment.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/investment.png" alt="">
+                                    </div>
+                                    <div class="title">Investment</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/language_translator.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/language_translator.png" alt="">
+                                    </div>
+                                    <div class="title">Language translator</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/lead_generation.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/lead_generation.png" alt="">
+                                    </div>
+                                    <div class="title">Lead generation</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/lead_management.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/lead_management.png" alt="">
+                                    </div>
+                                    <div class="title">Lead management</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/legal_services.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/legal_services.png" alt="">
+                                    </div>
+                                    <div class="title">Legal services</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/lifestyle_search.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/lifestyle_search.png" alt="">
+                                    </div>
+                                    <div class="title">Lifestyle search</div>
+                                </a>
+                            </li>
+                            <li class="more"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/more.png" alt=""><img class="red" src="resources/images/icon-carousel/red/more.png" alt=""></span><span class="title">More</span></button>
+                            </li>
+                        </ul>
+                        <!-- End of .row -->
+
+                        <ul class="row item">
+                            <li class="previous"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/previous.png" alt=""><img class="red" src="resources/images/icon-carousel/red/previous.png" alt=""></span><span class="title">Previous</span></button>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/linkedin.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/linkedin.png" alt="">
+                                    </div>
+                                    <div class="title">LinkedIn</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/listing_presentation.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/listing_presentation.png" alt="">
+                                    </div>
+                                    <div class="title">Listing presentation</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/lock_box.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/lock_box.png" alt="">
+                                    </div>
+                                    <div class="title">Lock box</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/market_analytics.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/market_analytics.png" alt="">
+                                    </div>
+                                    <div class="title">Market analytics</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/market_research.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/market_research.png" alt="">
+                                    </div>
+                                    <div class="title">Market research</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/mls_association.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/mls_association.png" alt="">
+                                    </div>
+                                    <div class="title">MLS Association</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/mls_association_websites.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/mls_association_websites.png" alt="">
+                                    </div>
+                                    <div class="title">MLS / Association Websites</div>
+                                </a>
+                            </li>
+                            <li class="more"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/more.png" alt=""><img class="red" src="resources/images/icon-carousel/red/more.png" alt=""></span><span class="title">More</span></button>
+                            </li>
+                        </ul>
+                        <!-- End of .row -->
+
+                        <ul class="row item">
+                            <li class="previous"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/previous.png" alt=""><img class="red" src="resources/images/icon-carousel/red/previous.png" alt=""></span><span class="title">Previous</span></button>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/mls_system.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/mls_system.png" alt="">
+                                    </div>
+                                    <div class="title">MLS System</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/mobile_aplications.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/mobile_aplications.png" alt="">
+                                    </div>
+                                    <div class="title">Mobile aplications</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/mobile_search.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/mobile_search.png" alt="">
+                                    </div>
+                                    <div class="title">Mobile search</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/mobile_sites.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/mobile_sites.png" alt="">
+                                    </div>
+                                    <div class="title">Mobile sites</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/mortgage.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/mortgage.png" alt="">
+                                    </div>
+                                    <div class="title">Mortgage</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/new_home_search.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/new_home_search.png" alt="">
+                                    </div>
+                                    <div class="title">New home search</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/non_dues_revenue.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/non_dues_revenue.png" alt="">
+                                    </div>
+                                    <div class="title">Non dues revenue</div>
+                                </a>
+                            </li>
+                            <li class="more"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/more.png" alt=""><img class="red" src="resources/images/icon-carousel/red/more.png" alt=""></span><span class="title">More</span></button>
+                            </li>
+                        </ul>
+                        <!-- End of .row -->
+
+                        <ul class="row item">
+                            <li class="previous"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/previous.png" alt=""><img class="red" src="resources/images/icon-carousel/red/previous.png" alt=""></span><span class="title">Previous</span></button>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/online_chat.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/online_chat.png" alt="">
+                                    </div>
+                                    <div class="title">Online chat</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/online_marketing.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/online_marketing.png" alt="">
+                                    </div>
+                                    <div class="title">Online marketing</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/photography_services.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/photography_services.png" alt="">
+                                    </div>
+                                    <div class="title">Photography services</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/podcasting.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/podcasting.png" alt="">
+                                    </div>
+                                    <div class="title">Podcasting</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/mortgage.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/mortgage.png" alt="">
+                                    </div>
+                                    <div class="title">Mortgage</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/new_home_search.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/new_home_search.png" alt="">
+                                    </div>
+                                    <div class="title">New home search</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/non_dues_revenue.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/non_dues_revenue.png" alt="">
+                                    </div>
+                                    <div class="title">Non dues revenue</div>
+                                </a>
+                            </li>
+                            <li class="more"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/more.png" alt=""><img class="red" src="resources/images/icon-carousel/red/more.png" alt=""></span><span class="title">More</span></button>
+                            </li>
+                        </ul>
+                        <!-- End of .row -->
+
+                        <ul class="row item">
+                            <li class="previous"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/previous.png" alt=""><img class="red" src="resources/images/icon-carousel/red/previous.png" alt=""></span><span class="title">Previous</span></button>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/property_search_portal.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/property_search_portal.png" alt="">
+                                    </div>
+                                    <div class="title">Property search portal</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/public_records_tax.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/public_records_tax.png" alt="">
+                                    </div>
+                                    <div class="title">Public records tax</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/public_service.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/public_service.png" alt="">
+                                    </div>
+                                    <div class="title">Public service</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/qr_codes.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/qr_codes.png" alt="">
+                                    </div>
+                                    <div class="title">QR Codes</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/recruiting.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/recruiting.png" alt="">
+                                    </div>
+                                    <div class="title">Recruiting</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/relocation_services.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/relocation_services.png" alt="">
+                                    </div>
+                                    <div class="title">Relocation services</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/rentals.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/rentals.png" alt="">
+                                    </div>
+                                    <div class="title">Rentals</div>
+                                </a>
+                            </li>
+                            <li class="more"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/more.png" alt=""><img class="red" src="resources/images/icon-carousel/red/more.png" alt=""></span><span class="title">More</span></button>
+                            </li>
+                        </ul>
+                        <!-- End of .row -->
+
+                        <ul class="row item">
+                            <li class="previous"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/previous.png" alt=""><img class="red" src="resources/images/icon-carousel/red/previous.png" alt=""></span><span class="title">Previous</span></button>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/security.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/security.png" alt="">
+                                    </div>
+                                    <div class="title">Security</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/seo.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/seo.png" alt="">
+                                    </div>
+                                    <div class="title">SEO</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/short_sale.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/short_sale.png" alt="">
+                                    </div>
+                                    <div class="title">Short sale</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/showing_appt.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/showing_appt.png" alt="">
+                                    </div>
+                                    <div class="title">Showing APPT</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/signs.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/signs.png" alt="">
+                                    </div>
+                                    <div class="title">Signs</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/single_property_website.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/single_property_website.png" alt="">
+                                    </div>
+                                    <div class="title">Single property website</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/social_media.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/social_media.png" alt="">
+                                    </div>
+                                    <div class="title">Social media</div>
+                                </a>
+                            </li>
+                            <li class="more"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/more.png" alt=""><img class="red" src="resources/images/icon-carousel/red/more.png" alt=""></span><span class="title">More</span></button>
+                            </li>
+                        </ul>
+                        <!-- End of .row -->
+
+                        <ul class="row item">
+                            <li class="previous"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/previous.png" alt=""><img class="red" src="resources/images/icon-carousel/red/previous.png" alt=""></span><span class="title">Previous</span></button>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/strategic_planning.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/strategic_planning.png" alt="">
+                                    </div>
+                                    <div class="title">Strategic planning</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/survey_tools.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/survey_tools.png" alt="">
+                                    </div>
+                                    <div class="title">Survey tools</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/text_message_marketing.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/text_message_marketing.png" alt="">
+                                    </div>
+                                    <div class="title">Text message marketing</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/title.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/title.png" alt="">
+                                    </div>
+                                    <div class="title">Title</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/training.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/training.png" alt="">
+                                    </div>
+                                    <div class="title">Training</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/transaction_management.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/transaction_management.png" alt="">
+                                    </div>
+                                    <div class="title">Transaction management</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/social_media.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/social_media.png" alt="">
+                                    </div>
+                                    <div class="title">Social media</div>
+                                </a>
+                            </li>
+                            <li class="more"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/more.png" alt=""><img class="red" src="resources/images/icon-carousel/red/more.png" alt=""></span><span class="title">More</span></button>
+                            </li>
+                        </ul>
+                        <!-- End of .row -->
+
+                        <ul class="row item">
+                            <li class="previous"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/previous.png" alt=""><img class="red" src="resources/images/icon-carousel/red/previous.png" alt=""></span><span class="title">Previous</span></button>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/vacation_ownership_services.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/vacation_ownership_services.png" alt="">
+                                    </div>
+                                    <div class="title">Vacation ownership services</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/video_service.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/video_service.png" alt="">
+                                    </div>
+                                    <div class="title">Video service</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/virtual_tour.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/virtual_tour.png" alt="">
+                                    </div>
+                                    <div class="title">Virtual tour</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/vow.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/vow.png" alt="">
+                                    </div>
+                                    <div class="title">VOW</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/web_design.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/web_design.png" alt="">
+                                    </div>
+                                    <div class="title">Web design</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/webinar.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/webinar.png" alt="">
+                                    </div>
+                                    <div class="title">Webinar</div>
+                                </a>
+                            </li>
+                            <li class="more"><button><span class="imgs"><img class="white" src="resources/images/icon-carousel/website.png" alt=""><img class="red" src="resources/images/icon-carousel/red/website.png" alt=""></span><span class="title">Website</span></button>
+                            </li>
+                            <li>
+                                <a href="#icon">
+                                    <div class="imgs">
+                                        <img class="white" src="resources/images/icon-carousel/web_blog_plugins.png" alt="">
+                                        <img class="red" src="resources/images/icon-carousel/red/web_blog_plugins.png" alt="">
+                                    </div>
+                                    <div class="title">Web blog plugins</div>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- End of #ic-icons --> 
+                    <div class="clear"></div>
+
+                </nav>
+                <!-- End of #icon-carousel -->
+            </div>
+            <!-- End of .gray-wrapper -->    
+
+		</header>
+        <!-- End of #header -->
+
+
+
+        <div id="middle-content">
+
+            <main class="left">
+                <article id="product">
+
+                	<header id="product-header">
+                        <h1 id="product-title">Deductor</h1>
+                        
+                        <nav id="product-location">
+                            <a href="">Home</a>
+                            <span class="vertical-line"></span> 
+                            <a href="">All Products</a>
+                            <span class="vertical-line"></span> 
+                            <a href="" class="uppercase">Accounting</a>
+                        </nav>
+
+                        <div id="product-options" class="uppercase">
+                            <a id="product-contact" href="">Contact</a>
+                            <span class="vertical-line"></span>        
+                            <a id="product-website" href="">Website</a>
+                            <span class="vertical-line"></span>       
+                            <a id="next-product" class="active" href="">Next product &gt;</a>
+                        </div>
+
+                    </header>
+                    <!-- End of #product-header -->
+
+                    <div id="product-description">               
+                        <p>If you are tired of the shoebox full of receipts or having to keep track of your business expenses, Deductr might be the solution. Deductr PRO is fast and an easy way to track your expenses, mileage, and time. Their core purpose is to help you maximize your tax deduction and keep more of what you make.</p>
+                        <br>   
+                        <p><b>With Deductr, users can:</b></p>
+                        <br>
+                        <p>Automate the expense tracking process <br>
+                        Ensure you never miss another deduction <br>
+                        Eliminate tax time stress <br>
+                        Pay only what is required and not a penny more <br>
+                        The Deductr real-time tax deduction calculator allows you to see your current tax savings with every entry. They also have a detailed tax report with one click and it's perfectly formatted to meet your tax preparer's needs.</p>
+                        <br>
+                        <p>Another great tool they offer is the BankLINK feature. This feature allows you to automatically track your income and expenses by linking your bank accounts or credit card. <br> Deductr has made it their goal to make tax time stress-free and with all the useful tools they have <br> available, they might be "this much" closer to <br>
+                        accomplishing that goal.</p>
+                    </div>
+                    <!-- End of #product-description -->
+
+                </article>
+                <!-- End of article#product -->
+            </main>
+            <!-- End of main -->
+
+
+            <aside id="related-articles" class="right">
+                
+                <div id="ra-options">
+                    <div id="ra-type">
+                        <a href="">Articles</a>
+                        <span class="vertical-line"></span>    
+                        <a href="" class="uppercase">Accounting</a>
+                    </div>
+
+                    <div id="ra-controls" class="uppercase">
+                        <a href="" id="prev-articles">&lt;Previous </a>
+                        <span class="vertical-line"></span>                
+                        <a href="" id="next-articles" class="active">Next articles&gt;</a>
+                    </div>
+                </div>
+                <!-- End of #ra-options (Related Articles Options) -->
+
+                <article>
+                    <img src="resources/images/related-articles/top.png" alt="" width="400" height="260">
+                    <div class="text">
+                        <h2><a href="">Related Accounting Article</a></h2>
+                        <p class="ra-description">
+                            Lorem ipsum dolor sit amet, no nec inermis 
+                            apeirian definitionem, cu oratio intellegat vim.Ex cum elitr libris ...<a href="#ra-more" class="more active">More&gt;</a>
+                        </p>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="resources/images/related-articles/middle.png" alt="" width="400" height="254">
+                    <div class="text">                        
+                        <h2><a href="">Related Accounting Article 2</a></h2>
+                        <p class="ra-description">
+                            Lorem ipsum dolor sit amet, no nec inermis 
+                            apeirian definitionem, cu oratio intellegat vim.Ex cum elitr libris ...<a href="#ra-more" class="more active">More&gt;</a>
+                        </p>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="resources/images/related-articles/bottom.png" alt="" width="400" height="260">
+                    <div class="text">
+                        <h2><a href="">Related Accounting Article 3</a></h2>
+                        <p class="ra-description">
+                            Lorem ipsum dolor sit amet, no nec inermis 
+                            apeirian definitionem, cu oratio intellegat vim.Ex cum elitr libris ...<a href="#ra-more" class="more active">More&gt;</a>
+                        </p>                        
+                    </div>
+                </article>
+                <!-- End of all <article> inside #related-articles -->
+
+            </aside>
+            <!-- End of #related-articles -->
+
+
+            <div id="offers" class="left">
+                <div class="gray">
+                    <h3>
+                        <a href="#offer1">Watch webinars</a>
+                    </h3>
+                    <br>
+                    <p class="light">Numbers matter</p>
+                </div>
+
+                <div class="green">
+                    <h3>
+                        <a href="#offer2">Special exclusive offers</a>
+                    </h3>
+                    <p class="light">just for <br>
+                       ReTechnology members
+                    </p>
+                </div>
+            </div>
+            <!-- End of #offers -->
+
+
+            <div class="clear"></div>
+
+
+            <div id="bottom-add">
+                <img src="resources/images/ads/728x90.jpg" alt="" width="728" height="90">
+            </div>
+            <!-- End of #bottom-add -->
+
+        </div>
+        <!-- End of #middle-content -->
+ 
+
+
+        <footer id="footer" class="uppercase" role="contentinfo">
+            
+            <div id="footer-links">
+                <ul>
+                    <li>
+                        <a href="">
+                            <b>Reach 200k readers per month</b> <br>Advertise with Retechnology
+                        </a>
+                    </li>
+                    <li><a href="">Site map</a></li>
+                    <li><a href="">Privacy policy</a></li>
+                    <li><a href="">Site terms</a></li>              
+                </ul>
+
+                <ul>
+                    <li><a href="">About Retechnology</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Call Us</a></li>
+                    <li>All rights reserved copyright &copy; 2015</li>
+                </ul>
+            </div>
+            <!-- End of #footer-links -->
+
+            <ul id="footer-icons">
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>                
+            </ul>
+            <!-- End of #footer-icons -->
+
+            <div class="clear"></div>  
+        </footer>
+        <!-- End of #footer -->
+    
+
+
+        <!-- Scripts -->
+
+        <!-- jQuery -->
+        <script src="resources/scripts/jquery-2.2.0.min.js"></script>
+        <!-- OwlCarousel V2.0.0-beta.2.4 -->
+        <script src="resources/scripts/owl.carousel.min.js"></script>
+
+        <!-- Start Owl -->
+        <script src="resources/scripts/owl.start.js"></script> 
+
+
+
+
+        <!-- 16 Column grid - for tests -->
+        <!-- In order to see the option, the URL musth have "?16columngrid" at the end - more info resources/scripts/owl.start.js -->
+
+        <div id="column-grid-16" style="display:none">
+            <header class="start">Activate <br> 16 Column <br> Grid</header>
+            
+            <section style="display:none">
+                <br>
+                <button class="on-off">On/Off</button>
+                <br><br>
+                <label>Opacity:</label>
+                <br>
+                <select name="select-opacity">
+                    <option value="0.25">0.25</option>
+                    <option selected value="0.5">0.5</option>
+                    <option value="0.75">0.75</option>
+                    <option value="1">1</option>
+                </select>
+            </section>
+        </div>
+
+        <!-- For 16-column-grid GUI -->
+        <link rel="stylesheet" type="text/css" href="resources/stylesheets/16grid.css">
+        <script src="resources/scripts/16grid.js"></script>
+
+
+    </body>
+</html>
